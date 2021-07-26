@@ -1,6 +1,7 @@
 package com.AutoEngine;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -32,7 +33,7 @@ public class AppTest
 
     @BeforeMethod
 	public void setupTest() {
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
     }
     /**
      * Rigourous Test :-)
